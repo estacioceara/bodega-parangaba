@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body class="px-3">
+
+    <hr>
+
+<div class="row align-items-center">
+    <div class="col">
+        <span class="fs-2">🍺 Alcool de Errado</span>
+    </div>
+    <div class="col">
+        <nav class="text-end">
+            <a class="btn btn-outline-dark" href="dashboard.html">
+                <i class="material-icons">home</i>
+                Dashboard
+            </a>
+            <a class="btn btn-outline-dark" href="clientes.html">
+                <i class="material-icons">groups</i>
+                Clientes
+            </a>
+            <a class="btn btn-outline-dark" href="produtos.html">
+                <i class="material-icons">liquor</i>
+                Produtos
+            </a>
+            <a class="btn btn-outline-dark" href="pedidos.html">
+                <i class="material-icons">shopping_cart</i>
+                Pedidos
+            </a>
+            <a class="btn btn-outline-dark" href="config.html">
+                <i class="material-icons">settings</i>
+                Configurações
+            </a>
+            <a class="btn btn-outline-danger" href="index.html">
+                <i class="material-icons">logout</i>
+                Sair
+            </a>
+        </nav>
+    </div>
+</div>
+<hr>
+        
+<section class="card card-body">
+    <div class="row">
+        <div class="col">
+            <h3>Produtos</h3>
+        </div>
+        <div class="col text-end">
+            <button 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#novoCliente" 
+                class="btn btn-outline-dark">Novo</button>
+        </div>
+    </div>
+            
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="novoCliente" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cadastrar Cliente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form action="">
+            <label for="nome">Nome</label>
+            <input 
+                id="nome" 
+                type="text" 
+                placeholder="Digite aqui"
+                class="form-control mb-3">
+
+            <label for="quantidade">Quantidade</label>
+            <input 
+                id="quantidade" 
+                type="number" 
+                placeholder="Ex: (85) 9 1234-1234"
+                class="form-control mb-3">
+
+            <label for="email">Email</label>
+            <input 
+                id="email" 
+                type="text" 
+                placeholder="exemplo@email.com"
+                class="form-control mb-3">
+
+            <label for="cidade">Cidade</label>
+            <select id="cidade" class="form-select mb-3">
+                <option selected>-- Selecione --</option>
+                <option>Fortaleza</option>
+                <option>Maracanau</option>
+                <option>Caucaia</option>
+            </select>
+
+            <button class="btn btn-primary w-100    ">PRONTO</button>
+            </form>
+        </div>
+        </div>
+
+
+
+    <table class="mt-3 table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>#ID</th>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Imagem</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ypioca</td>
+                <td>Destilados</td>
+                <td> 
+                    <img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'> 
+                </td>
+                <td>Prata, 960ml</td>
+                <td>R$ 10.90</td>
+                <td>18</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>51</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Ouro, 1L</td>
+                <td>R$ 12.50</td>
+                <td>22</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Velho Barreiro</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Tradicional, 910ml</td>
+                <td>R$ 9.90</td>
+                <td>30</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pitú</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Garrafa, 965ml</td>
+                <td>R$ 11.30</td>
+                <td>20</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Montilla</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Rum Branco, 900ml</td>
+                <td>R$ 16.40</td>
+                <td>12</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Cachaça 3 Fazendas</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Envelhecida, 700ml</td>
+                <td>R$ 19.90</td>
+                <td>8</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Seleta</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Amarela, 670ml</td>
+                <td>R$ 14.70</td>
+                <td>17</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Germana</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Clássica, 600ml</td>
+                <td>R$ 22.00</td>
+                <td>10</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Magnífica</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Reserva Soleira, 750ml</td>
+                <td>R$ 28.90</td>
+                <td>5</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Sagatiba</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Pura, 700ml</td>
+                <td>R$ 24.60</td>
+                <td>9</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Cabana</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Premium, 750ml</td>
+                <td>R$ 32.00</td>
+                <td>4</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Ypióca Ouro</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Amadurecida, 960ml</td>
+                <td>R$ 13.50</td>
+                <td>15</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Cachaça da Roça</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Artesanal, 700ml</td>
+                <td>R$ 17.90</td>
+                <td>11</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Canarinha</td>
+                <td>Destilados</td>
+                <td><img width='70px' src='https://redemix.vteximg.com.br/arquivos/ids/209157-500-500/7896383730152.jpg'></td>
+                <td>Tradicional, 750ml</td>
+                <td>R$ 15.20</td>
+                <td>13</td>
+                <td>
+                    <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                    <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
