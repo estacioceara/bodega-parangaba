@@ -97,15 +97,10 @@ Pontos a abordar na apresentação:
   
 
 | Critério | Pontos |
-
 | -------------------------- | ------ |
-
 | Implementação Técnica | 10 |
-
 | Apresentação do Trabalho | 10 |
-
 | Acompanhamento do Trabalho | 10 |
-
 | **Total** | **30** |
 
   
