@@ -18,6 +18,8 @@
 
 Resolver 04 tarefas/tasks/missões disponiveis no github
 
+**Obs:** As tarefas devem ser implementadas no projeto em questão, códigos implementados fora dessa aplicação não serão aceitos.
+
   
 
 > Tasks: https://github.com/estacioceara/bodega-parangaba/issues
